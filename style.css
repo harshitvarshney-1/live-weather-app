@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/416920/pexels-photo-416920.jpeg?cs=srgb&dl=pexels-pixabay-416920.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.box {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Lightning_Pritzerbe_01_%28MK%29.jpg/1200px-Lightning_Pritzerbe_01_%28MK%29.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+h1, p {
+  color: #fff;
+  text-align: center;
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.input-box {
+  width: 100%;
+  text-align: center;
+}
+
+#input-field {
+  margin-top: 5px;
+  padding: 8px;
+  width: 65%;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+#search-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#search-btn:hover {
+  background-color: darkred;
+}
+
+.data-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.rectangle {
+  height: 60px;
+  width: 150px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+span {
+  color: aliceblue;
+  font-weight: 500;
+}
+
+/* 🌐 RESPONSIVE DESIGN */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+  .box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #input-field {
+    width: 70%;
+  }
+
+  .rectangle {
+    width: 130px;
+    height: 55px;
+  }
+}
+
+/* Mobiles (480px and below) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p, h3 {
+    font-size: 0.9rem;
+  }
+
+  .box {
+    padding: 15px;
+  }
+
+  #input-field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #search-btn {
+    width: 100%;
+  }
+
+  .data-box {
+    flex-direction: column;
+  }
+
+  .rectangle {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Lilita+One&family=Luckiest+Guy&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <h1>Current Weather Data</h1>
+            <div class="input-box">
+                <p>Enter The City Name :</p>
+                <input type="text" placeholder="Enter The City Name....." id="input-field">
+                <button id="search-btn">Search</button>
+            </div>
+    
+            <div class="data-box">
+                <div class="temperature rectangle">
+                    <h3>Temperature:</h3>
+                    <span id="temperature-label"></span>
+                    <!-- <div class="rectangle"></div> -->
+                </div>
+                <div class="humidity rectangle">
+                    <h3>💧 Humidity: </h3>
+                    <span id="humidity-label"></span>
+                    
+                    <!-- <div class="rectangle"></div> -->
+                </div>
+                <div class="condition rectangle">
+                    <h3>☁️ Condition: </h3>
+                    <span id="condition-label"></span>
+                    
+                    <!-- <div class="rectangle"></div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
